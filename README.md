@@ -1,12 +1,6 @@
 # apigee-sample
 This repository contains the apigee proxy samples which i created to test/understand the apigee enterprise cloud proxy.
 
-To test this
-1. Upload the zip file into your apigee enterprise cloud instance
-
-or 
-
-Manually copy paste the required steps in your apigee cloud instance
 
 This sample will talk to the backend meetup api to retrieve the list of open events in any place ordered by nearest date.
 
