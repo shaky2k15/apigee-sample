@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessageRequest">
+    <DisplayName>AssignMessageRequest</DisplayName>
+    <Properties/>
+
+    <Set>
+         <QueryParams>
+      	<QueryParam name="key">2420723f1c393d28633f344d281d5f3f</QueryParam>
+         <QueryParam name="country">{request.queryparam.country}</QueryParam>
+        <QueryParam name="city">{request.queryparam.city}</QueryParam>
+           <QueryParam name="topic">{request.queryparam.topic}</QueryParam>
+    	</QueryParams>
+        <Verb>GET</Verb>
+        <Path/>
+    </Set>
+
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

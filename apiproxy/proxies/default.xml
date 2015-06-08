@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Flows>
+        <Flow name="search">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>AssignMessageRequest</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>XML-to-JSON-1</Name>
+                </Step>
+                <Step>
+                    <Name>JavaScript</Name>
+                </Step>
+                <Step>
+                    <Name>JavaScript-error-response</Name>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <VirtualHost>default</VirtualHost>
+        <BasePath>/v1/meetups</BasePath>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+</ProxyEndpoint>

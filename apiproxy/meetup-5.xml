@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="5" name="meetup-5">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1433452670568</CreatedAt>
+    <CreatedBy>in@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>meetup-5</DisplayName>
+    <LastModifiedAt>1433452670568</LastModifiedAt>
+    <LastModifiedBy>in@gmail.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignMessageRequest</Policy>
+        <Policy>Errorresponsecode</Policy>
+        <Policy>JavaScript-error-response</Policy>
+        <Policy>JavaScript</Policy>
+        <Policy>XML-to-JSON-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-error-response.js</Resource>
+        <Resource>jsc://JavaScript.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
